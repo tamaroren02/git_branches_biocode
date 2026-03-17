@@ -8,3 +8,10 @@ def read_fasta(filename):
 
 sequence = read_fasta("data/sequence.fasta")
 print(sequence)
+
+def at_content(seq):
+    a = seq.count(“A")
+    t = seq.count(“T")
+    gc = (a + t) / len(seq) * 100
+    return at
+print(« AT content:", at_content(sequence))
